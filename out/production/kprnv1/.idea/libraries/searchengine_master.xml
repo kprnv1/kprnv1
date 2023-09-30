@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="searchengine_master">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/searchengine_master.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
