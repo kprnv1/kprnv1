@@ -1,4 +1,4 @@
-### Hi there 👋
+### The best Java developer welcomes you 👋
 
 <!--
 **kprnv1/kprnv1** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
