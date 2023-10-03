@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c752de3c-1c68-4361-9af6-f0563a0853d2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/searchengine/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/kprnv1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_13_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_13_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_13_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_13_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_13_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_13_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__com_mysql_mysql_connector_j_8_0_33.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__com_sun_activation_jakarta_activation_1_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__com_zaxxer_HikariCP_4_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__jakarta_inject_jakarta_inject_api_2_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_2_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_1_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_12_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_17_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_17_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_apache_lucene_analysis_morphology_1_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_apache_lucene_lucene_analyzers_common_8_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_apache_lucene_lucene_core_8_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_apache_lucene_morphology_dictionary_reader_1_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_apache_lucene_morphology_english_1_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_apache_lucene_morphology_morph_1_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_apache_lucene_morphology_russian_1_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_64.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_64.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_64.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_6_0_6_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_2_4_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_hibernate_orm_hibernate_core_6_1_7_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_jboss_jandex_2_4_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_3_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_jsoup_jsoup_1_16_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_projectlombok_lombok_1_18_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_36.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_36.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_spring_aop_5_3_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_spring_aspects_5_3_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_spring_beans_5_3_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_spring_context_5_3_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_spring_core_5_3_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_spring_expression_5_3_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_spring_orm_5_3_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_spring_tx_5_3_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_spring_web_5_3_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_15_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_15_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_yaml_snakeyaml_1_30.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/searchengine_master.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kprnv1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kprnv1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/searchengine/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2W4r538g2NrAKgqvjb24j9XdSCH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/Users/sergeykupriyanov/Documents/GitHub/kprnv1"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="searchengine.Application" />
+      <module name="kprnv1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="searchengine.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="searchengine.Main" />
+      <module name="kprnv1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c752de3c-1c68-4361-9af6-f0563a0853d2" name="Changes" comment="" />
+      <created>1696002506547</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696002506547</updated>
+    </task>
+    <task id="LOCAL-00001" summary="1">
+      <created>1696003925348</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1696003925348</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1">
+      <created>1696060423783</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1696060423783</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1">
+      <created>1696064213455</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1696064213455</updated>
+    </task>
+    <task id="LOCAL-00004" summary="1">
+      <created>1696267271044</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1696267271044</updated>
+    </task>
+    <task id="LOCAL-00005" summary="1">
+      <created>1696267329047</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1696267329047</updated>
+    </task>
+    <task id="LOCAL-00006" summary="1">
+      <created>1696267913864</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1696267913864</updated>
+    </task>
+    <task id="LOCAL-00007" summary="1">
+      <created>1696354135922</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1696354135922</updated>
+    </task>
+    <task id="LOCAL-00008" summary="1">
+      <created>1696354356987</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1696354356987</updated>
+    </task>
+    <task id="LOCAL-00009" summary="1">
+      <created>1696355402974</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1696355402974</updated>
+    </task>
+    <task id="LOCAL-00010" summary="1">
+      <created>1696356367229</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1696356367229</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
+  </component>
+</project>
