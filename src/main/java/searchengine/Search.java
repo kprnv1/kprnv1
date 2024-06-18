@@ -36,20 +36,10 @@ public class Search {
         this.lemmaRepositoryService = lemmaRepositoryService;
     }
 
+
     public SearchResponseService searchService(Request request, String url, int offset, int limit) {
         List<Site> siteList = siteRepositoryService.getAllSites();
-        List<SearchData> listOfSearchData = new ArrayList<>();
-        if (url == null) {
-            for (Site s : siteList) {
-                Map<Page, Double> list = searching(request, s.getId());
-
-                listOfSearchData.addAll(getSortedSearchData(list, request));
-            }
-        } else {
-            Site site = siteRepositoryService.getSite(url).get();
-            Map<Page, Double> list = searching(request, site.getId());
-            listOfSearchData.addAll(getSortedSearchData(list, request));
-        }
+        List<SearchData> listOfSearchData = addDataInList(url, siteList, request);
         int count;
         listOfSearchData.sort(Comparator.comparingDouble(SearchData::getRelevance).reversed());
         if (listOfSearchData.isEmpty()) {
@@ -64,8 +54,23 @@ public class Search {
         for (int i = offset; i < count; i++) {
             searchData[i] = listOfSearchData.get(i);
         }
-
         return new SearchResponseService(true, count, searchData);
+    }
+
+    private List<SearchData> addDataInList(String url, List<Site> siteList, Request request) {
+        List<SearchData> listOfSearchData = new ArrayList<>();
+        if (url == null) {
+            for (Site s : siteList) {
+                Map<Page, Double> list = searching(request, s.getId());
+
+                listOfSearchData.addAll(getSortedSearchData(list, request));
+            }
+        } else {
+            Site site = siteRepositoryService.getSite(url).get();
+            Map<Page, Double> list = searching(request, site.getId());
+            listOfSearchData.addAll(getSortedSearchData(list, request));
+        }
+        return listOfSearchData;
     }
 
     private Map<Page, Double> searching(Request request, int siteId) {
@@ -84,26 +89,29 @@ public class Search {
                 }
             }
             Map<Page, Double> pageAbsRelevance = new HashMap<>();
-
-            double maxRel = 0.0;
-            for (Integer p : pageIndexes) {
-                Optional<Page> opPage;
-                Site site = siteRepositoryService.getSite(siteId);
-                opPage = pageRepositoryService.findPageByPageIdAndSite(p, site);
-                if (opPage.isPresent()) {
-                    Page page = opPage.get();
-                    double r = getAbsRelevance(page, reqLemmas);
-                    pageAbsRelevance.put(page, r);
-                    if (r > maxRel)
-                        maxRel = r;
-                }
-            }
             for (Map.Entry<Page, Double> abs : pageAbsRelevance.entrySet()) {
-                pageRelevance.put(abs.getKey(), abs.getValue() / maxRel);
+                pageRelevance.put(abs.getKey(), abs.getValue() / getMaxRel(pageIndexes, siteId, reqLemmas, pageAbsRelevance));
             }
         }
 
         return pageRelevance;
+    }
+
+    private Double getMaxRel(List<Integer> pageIndexes, int siteId, List<Lemma> reqLemmas, Map<Page, Double> pageAbsRelevance) {
+        double maxRel = 0.0;
+        for (Integer p : pageIndexes) {
+            Optional<Page> opPage;
+            Site site = siteRepositoryService.getSite(siteId);
+            opPage = pageRepositoryService.findPageByPageIdAndSite(p, site);
+            if (opPage.isPresent()) {
+                Page page = opPage.get();
+                double r = getAbsRelevance(page, reqLemmas);
+                pageAbsRelevance.put(page, r);
+                if (r > maxRel)
+                    maxRel = r;
+            }
+        }
+        return maxRel;
     }
 
     private List<SearchData> getSortedSearchData(Map<Page, Double> sortedPageMap, Request request) {
@@ -208,6 +216,7 @@ public class Search {
         }
         return builder1.toString();
     }
+
 
     private List<TreeSet<Integer>> getSearchingIndexes(String string, Set<Integer> indexesOfBolt) {
         ArrayList<Integer> indexes = new ArrayList<>(indexesOfBolt);

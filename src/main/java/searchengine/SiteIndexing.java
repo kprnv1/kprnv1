@@ -97,36 +97,11 @@ public class SiteIndexing extends Thread {
             if (pagePath.isBlank()) {
                 pagePath = "/";
             }
-            Optional<Page> getPage;
-            if (page == null) {
-                getPage = pageRepositoryService.findPageByPagePathAndSiteId(pagePath, site.getId());
-            } else {
-                getPage = Optional.of(page);
-            }
-            Page checkPage = new Page();
-            if (getPage.isPresent()) {
-                checkPage = getPage.get();
-            }
-
+            Page checkPage = getPage(page, pagePath);
             if (pagePath.equals("/")) {
                 prepareDbToIndexing(checkPage);
             }
-
-            TreeMap<String, Integer> map = new TreeMap<>();
-            for (String name : fieldList) {
-                float weight = 1.0f;
-                String stringByTag = getStringByTag(name, Objects.requireNonNull(page).getContent());
-                MorphologyAnalyzer analyzer = new MorphologyAnalyzer();
-                TreeMap<String, Integer> tempMap = analyzer.textAnalyzer(stringByTag);
-                map.putAll(tempMap);
-            }
-
-            List<LemmaAll> lemmaAllList = Collections.synchronizedList(new ArrayList<>());
-            for (Map.Entry<String, Integer> lemma : map.entrySet()) {
-                lemmaAllList.add(new LemmaAll(lemma.getKey(), lemma.getValue(), site.getId(), checkPage.getId()));
-            }
-            lemmaAllRepositoryService.saveAll(lemmaAllList);
-            map.clear();
+            saveLemma(page,checkPage,fieldList);
         } catch (Exception e) {
             site.setLastError(e.getMessage());
             log.info(e.getMessage());
@@ -139,6 +114,39 @@ public class SiteIndexing extends Thread {
 
         site.setStatus(Status.INDEXED);
         siteRepositoryService.save(site);
+    }
+
+    private void saveLemma(Page page, Page checkPage, List<String> fieldList) {
+        TreeMap<String, Integer> map = new TreeMap<>();
+        for (String name : fieldList) {
+            float weight = 1.0f;
+            String stringByTag = getStringByTag(name, Objects.requireNonNull(page).getContent());
+            MorphologyAnalyzer analyzer = new MorphologyAnalyzer();
+            TreeMap<String, Integer> tempMap = analyzer.textAnalyzer(stringByTag);
+            map.putAll(tempMap);
+        }
+
+        List<LemmaAll> lemmaAllList = Collections.synchronizedList(new ArrayList<>());
+        for (Map.Entry<String, Integer> lemma : map.entrySet()) {
+            lemmaAllList.add(new LemmaAll(lemma.getKey(), lemma.getValue(), site.getId(), checkPage.getId()));
+        }
+        lemmaAllRepositoryService.saveAll(lemmaAllList);
+        map.clear();
+    }
+
+
+    private Page getPage(Page page, String pagePath) {
+        Optional<Page> getPage;
+        if (page == null) {
+            getPage = pageRepositoryService.findPageByPagePathAndSiteId(pagePath, site.getId());
+        } else {
+            getPage = Optional.of(page);
+        }
+        Page checkPage = new Page();
+        if (getPage.isPresent()) {
+            checkPage = getPage.get();
+        }
+        return checkPage;
     }
 
     private List<String> getFieldList() {
